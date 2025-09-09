@@ -1,6 +1,7 @@
 #text based payroll system:
 def text_calcutate():
-    salary = float(input("Enter your salary: "))
+    salary_input = float(input("Enter your salary: "))
+    salary = float(salary_input.replace(",", ""))  
     tax = 0
 
     if salary <= 600000:
